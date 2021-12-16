@@ -1,5 +1,5 @@
 <?=$header?>
-	<h1>Formulario de crear</h1>
+	<h1>Formulario de editar</h1>
 	<div class="card">
 		<div class="card-body">
 			<h5 class="card-title">Ingresar datos del libro</h5>
