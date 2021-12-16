@@ -17,7 +17,7 @@
 						<input id="imagen" class="form-control" type="file" name="imagen">
 					</div>
 					<br>
-					<button class="btn btn-success" type="button">Guardar</button>
+					<button class="btn btn-success" type="submit">Guardar</button>
 				</form>
 			</p>
 		</div>
