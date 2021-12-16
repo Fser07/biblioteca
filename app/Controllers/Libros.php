@@ -73,7 +73,7 @@ class Libros extends Controller{
         $libro = new Libro();
         $datos=[
             'nombre'=>$this->request->getVar('nombre')];
-        $id = $this->request->getValor('id');
+        $id = $this->request->getVar('id');
 
         $libro->update($id,$datos);
             
