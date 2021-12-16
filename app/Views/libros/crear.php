@@ -15,6 +15,7 @@
 						<label for="imagen">Imagen</label>
 						<input id="imagen" class="form-control" type="file" name="imagen">
 					</div>
+					<br>
 					<button class="btn btn-success" type="button">Guardar</button>
 				</form>
 			</p>
