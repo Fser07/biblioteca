@@ -6,7 +6,7 @@
 			<p class="card-text">
 			
 			<form method="post" action="<?=site_url('/actualizar')?>" enctype="multipart/form-data">
-				<input type="hidden" name="id" value="<?$libro['id']?>">
+				<input type="hidden" name="id" value="<?=$libro['id']?>">
 				<div class="form-group">
 					<label for="nombre">Nombre</label>
 					<input id="nombre" class="form-control" type="text" name="nombre">
