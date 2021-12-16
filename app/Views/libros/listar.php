@@ -1,5 +1,5 @@
 <?=$header?>
-<a class="btn btn-succes" ref="<?base_url('crear')?>">Crear un libro</a>
+<a class="btn btn-succes" ref="<?=base_url('crear')?>">Crear un libro</a>
 
 		<table class="table table-light">
 			<thead class="thead-light">
