@@ -54,7 +54,7 @@ class Libros extends Controller{
 
         $libro->where('id',$id)->delete($id)
 
-        return $this->response->redirect(site_url('/listar');    
+        return $this->response->redirect(site_url('/listar'));    
     }
 
     public function editar($id=null){
