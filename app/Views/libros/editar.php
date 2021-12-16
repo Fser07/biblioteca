@@ -16,6 +16,7 @@
 						<img class="img-thumbnail" src="<?=base_url()?>/uploads/<?=$libro['image'];?>" width="100" alt="">
 						<input id="imagen" class="form-control" type="file" name="imagen">
 					</div>
+					<br>
 					<button class="btn btn-success" type="button">Guardar</button>
 				</form>
 			</p>
