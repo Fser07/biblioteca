@@ -12,7 +12,7 @@
 					</div>
 
 					<div class="form-group">
-						<label for="imagen">Imagen</label>
+						<label for="imagen">Imagen</label><br>
 						<input id="imagen" class="form-control" type="file" name="imagen">
 					</div>
 					<br>
