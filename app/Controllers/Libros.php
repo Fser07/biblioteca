@@ -60,7 +60,7 @@ class Libros extends Controller{
     public function editar($id=null){
         
         $libro = new Libro();
-        $datosLibro = $libro->where('id',$id)->first();
+        $datos['libro'] = $libro->where('id',$id)->first();
         
         $datos['header'] = view('template/header');  
         $datos['footer'] = view('template/footer');  
