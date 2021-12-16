@@ -76,6 +76,36 @@ class Libros extends Controller{
         $id = $this->request->getVar('id');
 
         $libro->update($id,$datos);
+        
+        $validacion = $this->validate([
+            'imagen' => [
+                'uploaded[imagen]',
+                'mime_in[imagen,image/jpg,image/jpeg,image/png]',
+                'max_size[imagen,1024]',
+            ]
+        ]);
+        
+        if($validacion){
+        	
+        	if($imagen = $this->request->getFile('imagen')){
+
+                $datosLibro = $libro->where('id',$id)->first();
+                $ruta=('../public/upload/'.$datosLibro['imagen']);
+                unlink($ruta);
+
+                $nuevoNombre = $imagen->getRandomName();
+                $imagen->move('../public/upload', $nuevoNombre);
+
+                $datos=[
+                    'nombre'=>$this->request->getVar('nombre'),
+                    'imagen'=>$nuevoNombre];
+
+             $libro->update($id,$datos);    
+            }      	
+        }
+        
+        return $this->response->redirect(site_url('/listar'));    
+            
             
     }
 }
